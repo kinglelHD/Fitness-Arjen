@@ -10,6 +10,10 @@
 body{
     background-color: rgb(218, 218, 218);
 }
+
+video{
+    top: 20px;
+}
     
 h1{
     font-size: 32px;
@@ -213,6 +217,10 @@ td{
 body{
     background-color: rgb(218, 218, 218);
 }
+
+video{
+    top: 20px;
+}
     
 h1{
     font-size: 48px;
@@ -397,6 +405,11 @@ td{
 }
 
 @media (min-width: 1900px) {
+    
+
+    video{
+       top: 20px;
+    }
     
     #nav{
         width: 250px;
