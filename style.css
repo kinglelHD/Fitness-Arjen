@@ -408,8 +408,8 @@ td{
     
 
     video{
-       top: 40px !important;
-        display: block;
+       transform: translateY(90px);
+       display: inline-block;
     }
     
     #nav{
