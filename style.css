@@ -409,6 +409,7 @@ td{
 
     video{
        top: 20px !important;
+        display: block;
     }
     
     #nav{
