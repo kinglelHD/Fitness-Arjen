@@ -13,6 +13,7 @@ body{
 
 video{
     display: none;
+    transform: translateY(70px);
 }
     
 h1{
@@ -219,7 +220,7 @@ body{
 }
 
 video{
-    display: none;
+    display: inline-block;
 }
     
 h1{
