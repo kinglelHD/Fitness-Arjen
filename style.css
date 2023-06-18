@@ -1,0 +1,223 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{ 
+    --dark-green: #003829;
+    --green: #005a42;
+    --light-green: #006e51;
+    --background-color: rgb(218, 218, 218);
+    --text-color: rgb(53, 53, 53);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --background-color: rgb(69, 69, 69);
+        --text-color: rgb(256, 256, 256);
+    }
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    font-size: calc(6px + .9vw);
+}
+
+body{
+    background-color: var(--background-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+video{
+    display: none;
+    transform: translateY(70px);
+}
+    
+h1{
+    font-size: 32px;
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.sidebar{
+    background-color: var(--dark-green);
+    outline: solid red;
+    width: 25%;
+}
+    
+nav{
+    height: fit-content;
+    background-color: var(--dark-green);
+    display: grid;
+    gap: .25rem;
+}
+    
+nav div{
+    background-color: var(--green);
+    display: grid;
+    gap: .25rem;
+}
+
+nav div div{
+    gap: 1rem;
+}
+    
+nav div a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    padding: 1rem;
+}
+
+nav div div a{
+    font-size: 1rem;
+    text-align: start;
+}
+    
+nav div:hover{
+    background-color: var(--light-green);
+}
+
+/*nav div div:hover{
+    background-color: var(--light-green);
+}*/
+
+#version{
+    font-size: 1rem;
+    color: gray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+    
+.current{
+    background-color: var(--light-green);
+}
+    
+.content{
+    position: relative;
+    width: 75%;
+    height: fit-content;
+    text-align: center;
+    font-size: 1rem;
+    display: block;
+    color: var(--text-color);
+    outline: solid blue;
+}
+
+.content *{
+    margin-top: 2rem;
+}
+    
+.content h1{
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.content p{
+    max-width: 90%;
+    margin: 0 auto;
+}
+    
+    .bmi-input{
+    width: 20rem;
+    padding: 1rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1rem
+    }
+    
+    .bmi-input:active{
+    border: none;
+    background-color: rgb(243, 243, 243);
+    }
+    
+    #bmi-berechnen{
+    background-color: var(--green);   
+    height: fit-content;
+    padding: 2rem 5rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 5%;
+    border: none;
+    border: 3px solid var(--dark-green);
+}
+    
+#bmi-berechnen:hover{
+background-color: var(--light-green);
+}
+
+p.bmi-output{
+    position: relative;
+    color: var(--light-green);
+    font-size: 1rem;
+}
+    
+#bmi{
+    position: relative;
+    color: var(--light-green);
+    font-size: 2rem;
+}
+    
+.content .Untergewicht{
+    width: fit-content;
+    border-radius: 8%;
+    border: 3px solid orangered;
+    color: orangered;
+    padding: .75rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+    
+.content .Normalgewicht{
+    width: fit-content;
+    border-radius: 8%;
+    border: 3px solid green;
+    color: green;
+    padding: .75rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+    
+.content .Übergewicht{
+    width: fit-content;
+    border-radius: 8%;
+    border: 3px solid purple;
+    color: purple;
+    padding: .75rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+    
+table{
+    width: fit-content;
+    color: white;
+    margin: 0 auto;
+    background-color: var(--dark-green);
+    top: 60px;
+    border: 2px solid var(--dark-green);
+}
+     
+td{
+     width: fit-content;
+     text-align: center;
+     font-size: 1rem;
+     padding: 1.5rem;
+     background-color: var(--light-green);
+}
+
+.heading{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    background-color: var(--green);
+}
