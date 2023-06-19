@@ -54,8 +54,7 @@ body{
 }
 
 video{
-    display: none;
-    transform: translateY(70px);
+    width: 80%;  
 }
     
 h1{
