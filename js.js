@@ -5,7 +5,7 @@ function Load(){
 
 
 function Version(){
-    let VERSION = "3.0.1"
+    let VERSION = "3.0.1 full release"
     document.getElementById('version').innerHTML = "V." + VERSION;
 }
 
