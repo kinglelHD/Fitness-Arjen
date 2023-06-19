@@ -5,7 +5,7 @@ function Load(){
 
 
 function Version(){
-    let VERSION = "3.0.0 Snapshot"
+    let VERSION = "3.0.1"
     document.getElementById('version').innerHTML = "V." + VERSION;
 }
 
